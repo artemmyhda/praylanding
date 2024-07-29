@@ -31,7 +31,7 @@ const tokenomicsChartOptions = {
     plugins: {
         legend: {
             display: true,
-            position: "right",
+            position: "right" as "right",
         }
     }
 }
