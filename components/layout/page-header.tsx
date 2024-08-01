@@ -15,7 +15,7 @@ function PageHeader({ className, children, ...props }: MotionHeaderProps) {
   return (
     <motion.section
       variants={staggerContainer({ staggerChildren: 0.15 })}
-      initial="hidden"
+      initial="show"
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
       className={cn(
@@ -38,7 +38,7 @@ function PageHeaderHeading({
     <motion.h1
       variants={fadeDownVariant()}
       className={cn(
-        "bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center text-4xl font-bold leading-tight tracking-tight text-transparent drop-shadow-sm dark:from-stone-100 dark:to-yellow-200 md:text-8xl md:leading-[6rem] lg:leading-[1.1]",
+        "bg-gradient-to-br from-stone-700 to-stone-900 bg-clip-text text-center text-4xl font-bold leading-tight tracking-tight text-transparent drop-shadow-sm md:text-8xl md:leading-[6rem] lg:leading-[1.1]",
         className
       )}
       {...props}

@@ -42,14 +42,14 @@ function MainNavMenu() {
               <span>PRAY</span>
             </NavigationMenuLink>
           </LinkComponent>
-          <LinkComponent href="/claim">
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              <span>CLAIM</span>
-            </NavigationMenuLink>
-          </LinkComponent>
           <LinkComponent href="/nft">
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               <span>NFT</span>
+            </NavigationMenuLink>
+          </LinkComponent>
+          <LinkComponent href="/claim">
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              <span>CLAIM</span>
             </NavigationMenuLink>
           </LinkComponent>
         </NavigationMenuItem>

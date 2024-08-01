@@ -6,37 +6,11 @@ import {
     PageHeaderHeading,
 } from "@/components/layout/page-header"
 import {PageSection} from "@/components/layout/page-section";
-import { Pie } from 'react-chartjs-2'
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
+import {LinkComponent} from "@/components/shared/link-component";
+import {siteConfig} from "@/config/site";
+import {FaTelegram, FaTwitter} from "react-icons/fa";
+import React from "react";
 
-
-const tokenomicsChartData = {
-    labels: ["Liquidity", "Team", "Influencers", "Airdrops", "Treasury"],
-    datasets: [
-        {
-            data: [69, 6.9, 5, 5, 14.1],
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.8)',
-                'rgba(54, 162, 235, 0.8)',
-                'rgba(54, 192, 54, 0.8)',
-                'rgba(162, 162, 23, 0.8)',
-                'rgba(162, 162, 162, 0.8)',
-            ],
-            borderWidth: 1,
-        },
-    ],
-};
-
-const tokenomicsChartOptions = {
-    plugins: {
-        legend: {
-            display: true,
-            position: "right" as "right",
-        }
-    }
-}
-
-ChartJS.register(ArcElement, Tooltip, Legend);
 
 export default function HomePage() {
   return (
@@ -46,15 +20,24 @@ export default function HomePage() {
                 <Image
                     src="/pray.svg"
                     alt="PRAY"
-                    width={800}
-                    height={800}
-                    className="size-64 rounded-2xl"
+                    width={300}
+                    height={300}
+                    className="rounded-2xl"
                 />
             </div>
+            <div className="w-1/2 text-center">
+                <b className="bg-gradient-to-br text-xl from-stone-950 to-black bg-clip-text text-centerx leading-tight tracking-tight text-transparent drop-shadow-sm">
+                    We, the chosen architects of the $PRAY project, have created a path guided by faith and unity. And this path is called $PRAY
+                </b>
+            </div>
             <div className="h-full">
-                <PageHeaderHeading>pray with us</PageHeaderHeading>
+                <PageHeaderHeading className="pb-8">pray with us</PageHeaderHeading>
             </div>
         </PageHeader>
+        <PageSection className="text-center">
+            <h1></h1>
+            <b>Inspired by collective enlightenment, we have birthed a free NFT collection in collaboration with Hannah Polza. $PRAY token is launched through the bonding curve. Our team performs the holy buyback ritual, rewarding faithful NFT holders. Collective prayers and meditations in our digital temples amplify our intentions, while our developers, as spiritual monks infuse each line of code with divine guidance creating Telegram bot, a digital oracle to spiritual journey.</b>
+        </PageSection>
         <PageSection>
             <h1 className="bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center text-2xl font-bold leading-tight tracking-tight text-transparent drop-shadow-sm dark:from-stone-100 dark:to-yellow-200 md:text-2xl md:leading-[6rem] lg:leading-[1.1]">Team</h1>
             <div className="grid w-full grid-cols-2 gap-2 md:grid-cols-4 md:gap-4">
@@ -107,27 +90,22 @@ export default function HomePage() {
                             className="size-32 rounded-2xl"
                         />
                         <a className="flex w-full items-center justify-center"
-                           href="https://warpcast.com/">Olya: content</a>
+                           href="https://instagram.com/olhakaravaieva">Olya: content</a>
                     </div>
                 </div>
             </div>
         </PageSection>
         <PageSection>
-            <h1 className="bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center text-2xl font-bold leading-tight tracking-tight text-transparent drop-shadow-sm dark:from-stone-100 dark:to-yellow-200 md:text-2xl md:leading-[6rem] lg:leading-[1.1]">Tokenomics</h1>
-            <div className="flex size-full items-center justify-center">
-                <div className="grid grid-cols-1 gap-1 md:grid-cols-2 md:gap-2">
-                    <div className="w-full">
-                        <Pie
-                            data={tokenomicsChartData}
-                            options={tokenomicsChartOptions}
-                        />
-                    </div>
-                    <div className="w-full pt-8">
-                        <p>With God&apos;s help and your prayers, we will soon write a beautiful text about our tokenomics.</p>
-                    </div>
-                </div>
+            <b>Join us, $PRAY with us, and shape your own destiny.</b>
+            <div className="flex items-center space-x-2">
+                <LinkComponent href={`${siteConfig.links.twitter}`}>
+                    <FaTwitter/>
+                </LinkComponent>
+                <LinkComponent href={`${siteConfig.links.telegram}`}>
+                    <FaTelegram/>
+                </LinkComponent>
             </div>
         </PageSection>
     </div>
-)
+  )
 }

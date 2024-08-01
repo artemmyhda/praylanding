@@ -15,12 +15,14 @@ export function SiteHeader() {
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 w-full border-b backdrop-blur transition-all",
+        "sticky top-0 z-50 w-full border-0 backdrop-blur transition-all",
         scrolled && "bg-background/50 "
       )}
     >
       <div className="container flex h-20 items-center">
-        <MainNav />
+        <div className="container w-full items-center justify-center hidden md:flex">
+          <MainNav />
+        </div>
         <MobileNav />
         <div className="hidden flex-1 items-center justify-between space-x-2 md:flex md:justify-end">
           <div className="flex items-center space-x-2">

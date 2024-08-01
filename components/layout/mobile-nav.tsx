@@ -49,17 +49,17 @@ export function MobileNav() {
                   <span>PRAY</span>
                 </NavigationMenuLink>
               </LinkComponent>
-              <LinkComponent href="/claim">
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  <span>CLAIM</span>
-                </NavigationMenuLink>
-              </LinkComponent>
               <LinkComponent href="/nft">
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   <span>NFT</span>
                 </NavigationMenuLink>
               </LinkComponent>
             </NavigationMenuItem>
+            <LinkComponent href="/claim">
+              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                <span>CLAIM</span>
+              </NavigationMenuLink>
+            </LinkComponent>
           </NavigationMenuList>
         </NavigationMenu>
           <div className="flex items-center space-x-2">

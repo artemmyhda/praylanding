@@ -1,11 +1,8 @@
 import { atom, useAtom, WritableAtom } from "jotai"
 
 let strAtom: WritableAtom<string, string>
-if (typeof window !== "undefined") {
-  strAtom = atom(window?.localStorage.getItem("theme") || "system")
-} else {
-  strAtom = atom("system")
-}
+strAtom = atom("light")
+
 
 export const colorMode = atom(
   (get) => get(strAtom),
@@ -17,6 +14,6 @@ export const colorMode = atom(
 
 export const useColorMode = () => {
   const [mode, setMode] = useAtom(colorMode)
-  const toggleMode = () => setMode(mode === "light" ? "dark" : "light")
+  const toggleMode = () => setMode("light")
   return [mode, toggleMode, setMode] as const
 }
