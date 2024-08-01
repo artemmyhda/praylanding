@@ -5,7 +5,7 @@ export default function PageClaim() {
         <div className="blur-parent-container">
             <div className="blurred-overlay">
                 <div className="centered-message">
-                    <p>Feature coming soon...</p>
+                    <p>Coming soon...</p>
                 </div>
             </div>
         </div>
