@@ -33,7 +33,7 @@ const BackgroundMusic: React.FC = () => {
                 onClick={toggleMute}
                 className="bg-gray-800 text-white p-2 rounded-full focus:outline-none flex items-center justify-center"
             >
-                {isMuted ? <FaVolumeMute size={24} /> : <FaVolumeUp size={24} />}
+                {isMuted ? <FaVolumeMute size={12} /> : <FaVolumeUp size={12} />}
             </button>
         </div>
     );
