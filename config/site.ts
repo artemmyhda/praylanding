@@ -22,7 +22,7 @@ export const siteConfig: SiteConfig = {
   localeDefault: "en",
   links: {
     twitter: "https://x.com/prayers_club",
-    telegram: "https://t.me/",
+    telegram: "https://t.me/prayers_club",
   },
 }
 

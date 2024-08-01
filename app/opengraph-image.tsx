@@ -28,14 +28,6 @@ export default async function Image() {
             "linear-gradient(to bottom right, #FFF 25%, #FFF0CA 75%)",
         }}
       >
-        <img
-          alt="TurboETH Logo"
-          src={new URL(
-            "../public/logo-gradient.png",
-            import.meta.url
-          ).toString()}
-          tw="w-20 h-20 mb-4 opacity-95"
-        />
         <h1
           style={{
             fontSize: "100px",
