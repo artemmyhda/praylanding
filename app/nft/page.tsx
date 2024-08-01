@@ -35,7 +35,7 @@ export default function PageNFT() {
                         <div>
                             <div className="relative">
                             <div
-                                className="absolute inset-0 bg-white bg-opacity-0 backdrop-filter backdrop-blur-md rounded-lg"></div>
+                                className="absolute inset-0 bg-white bg-opacity-0 backdrop-filter backdrop-blur-md rounded-lg border-0 border-stone-300 shadow-lg"></div>
                                 <div className="relative text-xl drop-shadow-sm p-4 text-center">
                                     <b>
                                         Hannah Polza is an NFT artist; her work is a blend of digital art, AI art, and
