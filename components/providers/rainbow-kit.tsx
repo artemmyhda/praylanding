@@ -48,7 +48,7 @@ export function RainbowKit({ children }: { children: ReactNode }) {
     <WagmiConfig config={wagmiConfig}>
       <RainbowKitProvider
         chains={chains}
-        theme={colorMode == "dark" ? darkTheme() : lightTheme()}
+        theme={lightTheme()}
       >
         {children}
       </RainbowKitProvider>

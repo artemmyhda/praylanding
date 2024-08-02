@@ -35,6 +35,32 @@
   z-index: 2; /* Ensure message appears above the blur */
 }
 
+body {
+  position: relative;
+  overflow: auto; /* Ensure the content is scrollable */
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: var(--background-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1; /* Ensure the background is behind all other content */
+  pointer-events: none; /* Prevent any interaction with the pseudo-element */
+}
+
+.content {
+  position: relative;
+  z-index: 1; /* Ensure content is above the pseudo-element */
+}
+
+
 @layer base {
   :root {
     /* Default background color of <body />...etc */

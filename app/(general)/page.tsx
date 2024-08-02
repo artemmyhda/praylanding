@@ -47,7 +47,7 @@ export default function HomePage() {
                 </div>
             </PageSection>
             <PageSection>
-                <h1 className="bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center text-2xl font-bold leading-tight tracking-tight text-transparent drop-shadow-sm dark:from-stone-100 dark:to-yellow-200 md:text-2xl md:leading-[6rem] lg:leading-[1.1]">Team</h1>
+                <h1 className="bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center text-2xl font-bold leading-tight tracking-tight text-transparent drop-shadow-sm md:text-2xl md:leading-[6rem] lg:leading-[1.1]">Team</h1>
                 <div className="grid w-full grid-cols-2 gap-4 md:grid-cols-4">
                     <div className="flex items-center justify-center p-4">
                         <a className="flex flex-col items-center gap-2 hover:text-pink-500"
