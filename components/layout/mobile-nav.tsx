@@ -62,14 +62,6 @@ export function MobileNav() {
             </LinkComponent>
           </NavigationMenuList>
         </NavigationMenu>
-          <div className="flex items-center space-x-2">
-            <LinkComponent href={`${siteConfig.links.twitter}`}>
-              <FaTwitter/>
-            </LinkComponent>
-            <LinkComponent href={`${siteConfig.links.telegram}`}>
-              <FaTelegram/>
-            </LinkComponent>
-          </div>
       </div>
     </Sheet>
   )

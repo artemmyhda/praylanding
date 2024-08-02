@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils"
 import { Toaster } from "@/components/ui/toaster"
 import RootProvider from "@/components/providers/root-provider"
 import BackgroundMusic from "@/components/BackgroundMusic";
+import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const url = env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"
@@ -49,6 +50,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <RootProvider>{children}</RootProvider>
           <Toaster />
           <BackgroundMusic />
+          <Analytics />
           <SpeedInsights />
         </body>
       </html>
