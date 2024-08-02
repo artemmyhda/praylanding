@@ -22,10 +22,10 @@ export default function PageNFT() {
                                     layout="responsive"
                                     width={400}
                                     height={400}
-                                    className="rounded-lg w-full object-cover"
+                                    className="rounded-lg w-full object-cover border-0 border-stone-300 shadow-lg"
                                 />
                                 <Button
-                                    className="pt-2 w-full mt-2 rounded-lg bg-gradient-to-r from-stone-500 to-stone-700 text-white"
+                                    className="pt-2 w-full mt-2 rounded-lg bg-gradient-to-r from-stone-500 to-stone-700 text-white border-0 border-stone-300 shadow-lg"
                                     onClick={handleMintClick}
                                 >
                                     MINT
