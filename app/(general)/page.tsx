@@ -19,13 +19,13 @@ export default function HomePage() {
                     <Image
                         src="/pray.png"
                         alt="PRAY"
-                        width={300}
-                        height={300}
+                        width={500}
+                        height={500}
                         className="rounded-2xl"
                     />
                 </div>
                 <div
-                    className="w-full md:w-1/2 mx-auto text-center rounded-lg overflow-visible relative border border-stone-900 shadow-lg">
+                    className="w-full md:w-1/2 -mt-12 mx-auto text-center rounded-lg overflow-visible relative border border-stone-900 shadow-lg">
                     <div
                         className="absolute inset-0 bg-white bg-opacity-30 backdrop-filter backdrop-blur-md rounded-lg"></div>
                     <div className="relative text-xl drop-shadow-sm p-4">

@@ -39,17 +39,17 @@ function MainNavMenu() {
         <NavigationMenuItem>
           <LinkComponent href="/">
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              <h1>PRAY</h1>
+              <h1 className="text-2xl">PRAY</h1>
             </NavigationMenuLink>
           </LinkComponent>
           <LinkComponent href="/nft">
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              <h1>NFT</h1>
+              <h1 className="text-2xl">NFT</h1>
             </NavigationMenuLink>
           </LinkComponent>
           <LinkComponent href="/claim">
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              <h1>CLAIM</h1>
+              <h1 className="text-2xl">CLAIM</h1>
             </NavigationMenuLink>
           </LinkComponent>
         </NavigationMenuItem>

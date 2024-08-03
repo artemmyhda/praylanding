@@ -36,8 +36,8 @@ export default function PageNFT() {
                         <div>
                             <div className="relative">
                             <div
-                                className="absolute inset-0 bg-white bg-opacity-30 backdrop-filter backdrop-blur-md rounded-lg border border-stone-900 shadow-lg"></div>
-                                <div className="relative text-xl drop-shadow-sm p-4 text-center">
+                                className="absolute w-11/12 inset-0 bg-white bg-opacity-30 backdrop-filter backdrop-blur-md rounded-lg border border-stone-900 shadow-lg"></div>
+                                <div className="relative w-11/12 text-xl drop-shadow-sm p-4 text-center">
                                     <b>
                                         Hannah Polza is an NFT artist; her work is a blend of digital art, AI art, and
                                         post-photography.
@@ -51,9 +51,9 @@ export default function PageNFT() {
                                         Exhibited in New York, Chicago, Berlin, Dubai, and other cities.
                                     </b>
                                     <div
-                                        className="absolute -top-10 -left-10 w-48 h-48 pointer-events-none">
+                                        className="absolute -bottom-10 -right-10 w-48 h-48 pointer-events-none">
                                         <img
-                                            src="/corner-tl.png"
+                                            src="/corner-br.png"
                                             alt="Corner decoration"
                                             className="w-full h-full object-cover"
                                         />
@@ -98,9 +98,9 @@ export default function PageNFT() {
                                     Exhibited in New York, Chicago, Berlin, Dubai, and other cities.
                                 </b>
                                 <div
-                                    className="absolute -top-6 -left-6 w-24 h-24 pointer-events-none">
+                                    className="absolute -bottom-10 -right-10 w-48 h-48 pointer-events-none">
                                     <img
-                                        src="/corner-tl.png"
+                                        src="/corner-br.png"
                                         alt="Corner decoration"
                                         className="w-full h-full object-cover"
                                     />
