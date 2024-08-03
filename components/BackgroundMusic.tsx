@@ -1,25 +1,26 @@
 "use client"
 
-import React, { useRef, useState, useEffect } from 'react';
-import { FaVolumeMute, FaVolumeUp } from 'react-icons/fa';
+import React, { useRef, useState } from 'react';
+import { FaPlay, FaVolumeMute, FaVolumeUp } from 'react-icons/fa';
 
 const BackgroundMusic: React.FC = () => {
     const audioRef = useRef<HTMLAudioElement>(null);
     const [isMuted, setIsMuted] = useState<boolean>(false);
+    const [hasInteracted, setHasInteracted] = useState<boolean>(false);
 
-    useEffect(() => {
-        // Attempt to autoplay music on load
+    const togglePlay = () => {
         if (audioRef.current) {
-            audioRef.current.play().catch(error => {
-                console.log('Autoplay blocked: ', error);
-            });
-        }
-    }, []);
-
-    const toggleMute = () => {
-        setIsMuted((prev) => !prev);
-        if (audioRef.current) {
-            audioRef.current.muted = !isMuted;
+            if (!hasInteracted) {
+                // User has clicked play, starting audio for the first time
+                setHasInteracted(true);
+                audioRef.current.play().catch(error => {
+                    console.log('Playback failed: ', error);
+                });
+            } else {
+                // Toggle mute state
+                setIsMuted((prev) => !prev);
+                audioRef.current.muted = !isMuted;
+            }
         }
     };
 
@@ -30,10 +31,10 @@ const BackgroundMusic: React.FC = () => {
                 Your browser does not support the audio element.
             </audio>
             <button
-                onClick={toggleMute}
+                onClick={togglePlay}
                 className="bg-gray-800 text-white p-2 rounded-full focus:outline-none flex items-center justify-center"
             >
-                {isMuted ? <FaVolumeMute size={12} /> : <FaVolumeUp size={12} />}
+                {!hasInteracted ? <FaPlay size={12} /> : (isMuted ? <FaVolumeMute size={12} /> : <FaVolumeUp size={12} />)}
             </button>
         </div>
     );
