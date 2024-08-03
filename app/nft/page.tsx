@@ -49,6 +49,9 @@ export default function PageNFT() {
                                         <br/>
                                         <br/>
                                         Exhibited in New York, Chicago, Berlin, Dubai, and other cities.
+                                        <br/>
+                                        <br/>
+                                        Discover more about Hannah Polza’s work and latest projects by visiting her official social media pages <a className="underline text-custom-blue" href="https://linktr.ee/hannahpolza">here</a>.
                                     </b>
                                     <div
                                         className="absolute -bottom-10 -right-10 w-48 h-48 pointer-events-none">
@@ -96,6 +99,9 @@ export default function PageNFT() {
                                     <br/>
                                     <br/>
                                     Exhibited in New York, Chicago, Berlin, Dubai, and other cities.
+                                    <br/>
+                                    <br/>
+                                    Discover more about Hannah Polza’s work and latest projects by visiting her official social media pages <a className="underline text-custom-blue" href="https://linktr.ee/hannahpolza">here</a>.
                                 </b>
                                 <div
                                     className="absolute -bottom-10 -right-10 w-48 h-48 pointer-events-none">

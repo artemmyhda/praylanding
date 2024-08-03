@@ -72,8 +72,8 @@ export default function HomePage() {
             </PageSection>
             <PageSection>
                 <h1 className="bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center text-2xl font-bold leading-tight tracking-tight text-transparent drop-shadow-sm md:text-2xl md:leading-[6rem] lg:leading-[1.1]">Team</h1>
-                <div className="grid w-full grid-cols-2 gap-4 md:grid-cols-4">
-                    <div className="flex items-center justify-center p-4">
+                <div className="grid w-full grid-cols-2 gap-0 md:grid-cols-5">
+                    <div className="flex items-center justify-center p-2">
                         <a className="flex flex-col items-center gap-2 hover:text-[#0600ff] hover-container"
                            href="https://x.com/NeverSettleCat">
                             <Image
@@ -90,10 +90,10 @@ export default function HomePage() {
                                 height={100}
                                 className="size-36 rounded-2xl hover-image"
                             />
-                            <h1 className="text-center text-xl">Kodak: media</h1>
+                            <h1 className="text-center text-xl">Spiritual Maestro <br/> Kodak</h1>
                         </a>
                     </div>
-                    <div className="flex items-center justify-center p-4">
+                    <div className="flex items-center justify-center p-2">
                         <a className="flex flex-col items-center gap-2 hover:text-[#0600ff] hover-container"
                            href="https://warpcast.com/rektures">
                             <Image
@@ -110,10 +110,30 @@ export default function HomePage() {
                                 height={100}
                                 className="size-36 rounded-2xl hover-image"
                             />
-                            <h1 className="text-center text-xl">Rektures: baker</h1>
+                            <h1 className="text-center text-xl">Sacred Architect <br/> Rektures</h1>
                         </a>
                     </div>
-                    <div className="flex items-center justify-center p-4">
+                    <div className="flex items-center justify-center p-2">
+                        <a className="flex flex-col items-center gap-2 hover:text-[#0600ff] hover-container"
+                           href="https://linktr.ee/hannahpolza">
+                            <Image
+                                src="/memberhannah.png"
+                                alt="Rectures"
+                                width={100}
+                                height={100}
+                                className="size-36 rounded-2xl"
+                            />
+                            <Image
+                                src="/glow-memberhannah.png"
+                                alt="Rectures"
+                                width={100}
+                                height={100}
+                                className="size-36 rounded-2xl hover-image"
+                            />
+                            <h1 className="text-center text-xl">Aesthetics Queen<br/> Hannah</h1>
+                        </a>
+                    </div>
+                    <div className="flex items-center justify-center p-2">
                         <a className="flex flex-col items-center gap-2 hover:text-[#0600ff] hover-container"
                            href="https://warpcast.com/i-rat.eth">
                             <Image
@@ -130,10 +150,10 @@ export default function HomePage() {
                                 height={100}
                                 className="size-36 rounded-2xl hover-image"
                             />
-                            <h1 className="text-center text-xl">Rat: coder</h1>
+                            <h1 className="text-center text-xl">Celestial Coder <br/> Rat</h1>
                         </a>
                     </div>
-                    <div className="flex items-center justify-center p-4">
+                    <div className="flex items-center justify-center p-2">
                         <a
                             className="flex flex-col items-center gap-2 hover:text-[#0600ff] hover-container"
                             href="https://instagram.com/olhakaravaieva"
@@ -152,7 +172,7 @@ export default function HomePage() {
                                 height={100}
                                 className="size-36 rounded-2xl hover-image"
                             />
-                            <h1 className="text-center text-xl">Olya: content</h1>
+                            <h1 className="text-center text-xl">Mystic Muse <br/> Olya</h1>
                         </a>
                     </div>
                 </div>
@@ -165,7 +185,7 @@ export default function HomePage() {
                             <FaTwitter/>
                         </LinkComponent>
                         <LinkComponent href={`${siteConfig.links.telegram}`}>
-                            <FaTelegram />
+                            <FaTelegram/>
                         </LinkComponent>
                     </div>
                 </div>
