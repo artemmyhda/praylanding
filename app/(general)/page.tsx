@@ -71,7 +71,7 @@ export default function HomePage() {
                 </div>
             </PageSection>
             <PageSection>
-                <h1 className="bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center text-2xl font-bold leading-tight tracking-tight text-transparent drop-shadow-sm md:text-2xl md:leading-[6rem] lg:leading-[1.1]">Team</h1>
+                <h1 className="bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center text-4xl md:text-6xl font-bold leading-tight tracking-tight text-transparent drop-shadow-sm md:leading-[6rem] lg:leading-[1.1]">Team</h1>
                 <div className="grid w-full grid-cols-2 gap-0 md:grid-cols-5">
                     <div className="flex items-center justify-center p-2">
                         <a className="flex flex-col items-center gap-2 hover:text-[#0600ff] hover-container"
@@ -177,19 +177,17 @@ export default function HomePage() {
                     </div>
                 </div>
             </PageSection>
-            <PageSection className="text-center">
-                <div className="flex flex-col items-center justify-center">
-                    <b className="mb-4">Join us, $PRAY with us, and shape your own destiny.</b>
-                    <div className="flex items-center justify-center space-x-2">
-                        <LinkComponent href={`${siteConfig.links.twitter}`}>
-                            <FaTwitter/>
-                        </LinkComponent>
-                        <LinkComponent href={`${siteConfig.links.telegram}`}>
-                            <FaTelegram/>
-                        </LinkComponent>
-                    </div>
+            <div className="px-4 flex flex-col items-center justify-center mt-32">
+                <b className="mb-4 text-xl text-center">Join us, $PRAY with us, and shape your own destiny.</b>
+                <div className="flex items-center justify-center space-x-2">
+                    <LinkComponent href={`${siteConfig.links.twitter}`}>
+                        <FaTwitter size={24} />
+                    </LinkComponent>
+                    <LinkComponent href={`${siteConfig.links.telegram}`}>
+                        <FaTelegram size={24} />
+                    </LinkComponent>
                 </div>
-            </PageSection>
+            </div>
         </div>
     )
 }
