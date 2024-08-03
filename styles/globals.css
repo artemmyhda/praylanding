@@ -7,6 +7,33 @@
   Note: do not include opacity value.
  */
 
+@font-face {
+  font-family: 'American TextC';
+  src: local('American TextC'),
+  url('/americantextc.woff2') format('woff2'),
+  url('/americantextc.woff') format('woff'),
+  url('/americantextc.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'EB Garamond';
+  src: local('EB Garamond'),
+  url('/EBGaramond-SemiBold.woff2') format('woff2'),
+  url('/EBGaramond-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  font-family: 'EB Garamond', sans-serif;
+}
+
+/* Apply EB Garamond to headers */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'American TextC', serif;
+}
+
 .blur-parent-container {
   width: 100%;
   height: 100%; /* Ensure this div takes full height of the parent */
@@ -33,6 +60,22 @@
   font-weight: bold;
   color: #333; /* Adjust text color as needed */
   z-index: 2; /* Ensure message appears above the blur */
+}
+
+.hover-container {
+  position: relative;
+}
+
+.hover-container:hover .hover-image {
+  opacity: 1;
+}
+
+.hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 body {

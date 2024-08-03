@@ -50,7 +50,7 @@ export default function HomePage() {
                 <h1 className="bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center text-2xl font-bold leading-tight tracking-tight text-transparent drop-shadow-sm md:text-2xl md:leading-[6rem] lg:leading-[1.1]">Team</h1>
                 <div className="grid w-full grid-cols-2 gap-4 md:grid-cols-4">
                     <div className="flex items-center justify-center p-4">
-                        <a className="flex flex-col items-center gap-2 hover:text-pink-500"
+                        <a className="flex flex-col items-center gap-2 hover:text-[#0600ff] hover-container"
                            href="https://warpcast.com/sasailalka">
                             <Image
                                 src="/memberkodak.png"
@@ -59,11 +59,18 @@ export default function HomePage() {
                                 height={100}
                                 className="size-36 rounded-2xl"
                             />
+                            <Image
+                                src="/glow-memberkodak.png"
+                                alt="Kodak"
+                                width={100}
+                                height={100}
+                                className="size-36 rounded-2xl hover-image"
+                            />
                             <p className="text-center">Kodak: media</p>
                         </a>
                     </div>
                     <div className="flex items-center justify-center p-4">
-                        <a className="flex flex-col items-center gap-2 hover:text-pink-500"
+                        <a className="flex flex-col items-center gap-2 hover:text-[#0600ff] hover-container"
                            href="https://warpcast.com/rektures">
                             <Image
                                 src="/memberrectures.png"
@@ -72,11 +79,18 @@ export default function HomePage() {
                                 height={100}
                                 className="size-36 rounded-2xl"
                             />
+                            <Image
+                                src="/glow-memberrectures.png"
+                                alt="Rectures"
+                                width={100}
+                                height={100}
+                                className="size-36 rounded-2xl hover-image"
+                            />
                             <p className="text-center">Rektures: baker</p>
                         </a>
                     </div>
                     <div className="flex items-center justify-center p-4">
-                        <a className="flex flex-col items-center gap-2 hover:text-pink-500"
+                        <a className="flex flex-col items-center gap-2 hover:text-[#0600ff] hover-container"
                            href="https://warpcast.com/i-rat.eth">
                             <Image
                                 src="/memberrat.png"
@@ -85,17 +99,34 @@ export default function HomePage() {
                                 height={100}
                                 className="size-36 rounded-2xl"
                             />
+                            <Image
+                                src="/glow-memberrat.png"
+                                alt="Rat"
+                                width={100}
+                                height={100}
+                                className="size-36 rounded-2xl hover-image"
+                            />
                             <p className="text-center">Rat: coder</p>
                         </a>
                     </div>
                     <div className="flex items-center justify-center p-4">
-                        <a className="flex flex-col items-center gap-2 hover:text-pink-500" href="https://instagram.com/olhakaravaieva">
+                        <a
+                            className="flex flex-col items-center gap-2 hover:text-[#0600ff] hover-container"
+                            href="https://instagram.com/olhakaravaieva"
+                        >
                             <Image
                                 src="/memberolya.png"
                                 alt="Olya"
                                 width={100}
                                 height={100}
                                 className="size-36 rounded-2xl"
+                            />
+                            <Image
+                                src="/glow-memberolya.png"
+                                alt="Olya"
+                                width={100}
+                                height={100}
+                                className="size-36 rounded-2xl hover-image"
                             />
                             <p className="text-center">Olya: content</p>
                         </a>
@@ -107,7 +138,7 @@ export default function HomePage() {
                     <b className="mb-4">Join us, $PRAY with us, and shape your own destiny.</b>
                     <div className="flex items-center justify-center space-x-2">
                         <LinkComponent href={`${siteConfig.links.twitter}`}>
-                            <FaTwitter />
+                            <FaTwitter/>
                         </LinkComponent>
                         <LinkComponent href={`${siteConfig.links.telegram}`}>
                             <FaTelegram />
