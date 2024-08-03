@@ -15,7 +15,7 @@ export default function HomePage() {
     return (
         <div className="container relative mt-20 px-0">
             <PageHeader className="pb-8">
-                <div className="h-full flex justify-center">
+                <div className="h-full flex justify-center pb-2">
                     <Image
                         src="/pray.svg"
                         alt="PRAY"
@@ -24,24 +24,48 @@ export default function HomePage() {
                         className="rounded-2xl"
                     />
                 </div>
-                <div className="w-full md:w-1/2 mx-auto text-center rounded-lg overflow-hidden relative border-0 border-stone-300 shadow-lg">
-                    <div className="absolute inset-0 bg-white bg-opacity-0 backdrop-filter backdrop-blur-md rounded-lg"></div>
+                <div
+                    className="w-full md:w-1/2 mx-auto text-center rounded-lg overflow-visible relative border-0 border-stone-300 shadow-lg">
+                    <div
+                        className="absolute inset-0 bg-white bg-opacity-0 backdrop-filter backdrop-blur-md rounded-lg"></div>
                     <div className="relative text-xl drop-shadow-sm p-4">
                         <b>
-                            We, the chosen architects of the $PRAY project, have created a path guided by faith and unity. And this path is called $PRAY
+                            We, the chosen architects of the $PRAY project, have created a path guided by faith and
+                            unity. And this path is called $PRAY.
                         </b>
+                    </div>
+                    <div className="absolute -bottom-5 -right-5 w-20 h-20 md:w-24 md:h-24 pointer-events-none">
+                        <img
+                            src="/corner-br.png"
+                            alt="Corner decoration"
+                            className="w-full h-full object-cover"
+                        />
+                    </div>
+                    <div className="absolute -top-5 -left-5 w-20 h-20 md:w-24 md:h-24 pointer-events-none">
+                        <img
+                            src="/corner-tl.png"
+                            alt="Corner decoration"
+                            className="w-full h-full object-cover"
+                        />
                     </div>
                 </div>
                 <div className="h-full flex justify-center">
                     <PageHeaderHeading className="pb-8">pray with us</PageHeaderHeading>
                 </div>
             </PageHeader>
-            <PageSection className="text-center">
-                <div className="w-full text-center rounded-lg overflow-hidden relative border-0 border-stone-300 shadow-lg mx-auto">
-                    <div className="absolute inset-0 bg-white bg-opacity-0 backdrop-filter backdrop-blur-md rounded-lg"></div>
+            <PageSection className="text-center pl-1">
+                <div
+                    className="w-full mx-auto text-center rounded-lg overflow-visible relative border-0 border-stone-300 shadow-lg">
+                    <div
+                        className="absolute inset-0 bg-white bg-opacity-0 backdrop-filter backdrop-blur-md rounded-lg"></div>
                     <div className="relative text-xl drop-shadow-sm p-4">
                         <b>
-                            Inspired by collective enlightenment, we have birthed a free NFT collection in collaboration with Hannah Polza. $PRAY token is launched through the bonding curve. Our team performs the holy buyback ritual, rewarding faithful NFT holders. Collective prayers and meditations in our digital temples amplify our intentions, while our developers, as spiritual monks, infuse each line of code with divine guidance creating Telegram bot, a digital oracle to spiritual journey.
+                            Inspired by collective enlightenment, we have birthed a free NFT collection in collaboration
+                            with Hannah Polza. $PRAY token is launched through the bonding curve. Our team performs the
+                            holy buyback ritual, rewarding faithful NFT holders. Collective prayers and meditations in
+                            our digital temples amplify our intentions, while our developers, as spiritual monks, infuse
+                            each line of code with divine guidance creating Telegram bot, a digital oracle to spiritual
+                            journey.
                         </b>
                     </div>
                 </div>
