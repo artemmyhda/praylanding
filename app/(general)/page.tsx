@@ -17,7 +17,7 @@ export default function HomePage() {
             <PageHeader className="pb-8">
                 <div className="h-full flex justify-center pb-2">
                     <Image
-                        src="/pray.svg"
+                        src="/pray.png"
                         alt="PRAY"
                         width={300}
                         height={300}

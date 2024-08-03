@@ -16,7 +16,7 @@ export function SiteHeader() {
           )}
       >
         <div className="flex h-20 items-center">
-          <div className="w-full items-center justify-center hidden md:flex">
+          <div className="w-full pl-24 items-center justify-center hidden md:flex">
             <MainNav />
           </div>
           <MobileNav />
