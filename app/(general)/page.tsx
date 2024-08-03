@@ -75,7 +75,7 @@ export default function HomePage() {
                 <div className="grid w-full grid-cols-2 gap-4 md:grid-cols-4">
                     <div className="flex items-center justify-center p-4">
                         <a className="flex flex-col items-center gap-2 hover:text-[#0600ff] hover-container"
-                           href="https://warpcast.com/sasailalka">
+                           href="https://x.com/NeverSettleCat">
                             <Image
                                 src="/memberkodak.png"
                                 alt="Kodak"
