@@ -22,10 +22,10 @@ export function SiteHeader() {
           <MobileNav />
           <div className="flex flex-1 pr-5 items-center justify-end space-x-2 md:flex">
             <LinkComponent href={`${siteConfig.links.twitter}`}>
-              <FaTwitter />
+              <FaTwitter size={24} />
             </LinkComponent>
             <LinkComponent href={`${siteConfig.links.telegram}`}>
-              <FaTelegram />
+              <FaTelegram size={24} />
             </LinkComponent>
           </div>
         </div>

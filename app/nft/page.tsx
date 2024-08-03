@@ -3,6 +3,7 @@
 import Image from "next/image"
 import {PageSection} from "@/components/layout/page-section";
 import {Button} from "@/components/ui/button";
+import React from "react";
 
 export default function PageNFT() {
     const handleMintClick = () => {
@@ -11,7 +12,7 @@ export default function PageNFT() {
   return (
       <div>
         <PageSection>
-            <div className="container w-full align-center justify-center md:align-right">
+            <div className="w-full align-center justify-center md:align-right">
                 <div className="hidden md:block">
                     <div className="w-full grid grid-cols-2 gap-5">
                         <div className="grid grid-cols-1 gap-5">
@@ -35,7 +36,7 @@ export default function PageNFT() {
                         <div>
                             <div className="relative">
                             <div
-                                className="absolute inset-0 bg-white bg-opacity-0 backdrop-filter backdrop-blur-md rounded-lg border-0 border-stone-300 shadow-lg"></div>
+                                className="absolute inset-0 bg-white bg-opacity-30 backdrop-filter backdrop-blur-md rounded-lg border border-stone-900 shadow-lg"></div>
                                 <div className="relative text-xl drop-shadow-sm p-4 text-center">
                                     <b>
                                         Hannah Polza is an NFT artist; her work is a blend of digital art, AI art, and
@@ -49,6 +50,14 @@ export default function PageNFT() {
                                         <br/>
                                         Exhibited in New York, Chicago, Berlin, Dubai, and other cities.
                                     </b>
+                                    <div
+                                        className="absolute -top-10 -left-10 w-48 h-48 pointer-events-none">
+                                        <img
+                                            src="/corner-tl.png"
+                                            alt="Corner decoration"
+                                            className="w-full h-full object-cover"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -57,7 +66,7 @@ export default function PageNFT() {
                 <div className="md:hidden">
                     <div className="container w-full grid grid-cols-1 gap-5 align-center mx-auto">
                         <div className="relative w-full">
-                            <Image
+                        <Image
                                 src="/nft.webp"
                                 alt="PRAY"
                                 layout="responsive"
@@ -74,7 +83,7 @@ export default function PageNFT() {
                         </div>
                         <div className="relative">
                             <div
-                                className="absolute inset-0 bg-white bg-opacity-0 backdrop-filter backdrop-blur-md rounded-lg"></div>
+                                className="absolute inset-0 bg-white bg-opacity-30 border border-stone-900 shadow-lg backdrop-filter backdrop-blur-md rounded-lg"></div>
                             <div className="relative text-xl drop-shadow-sm p-2 text-center">
                                 <b>
                                     Hannah Polza is an NFT artist; her work is a blend of digital art, AI art, and
@@ -88,6 +97,14 @@ export default function PageNFT() {
                                     <br/>
                                     Exhibited in New York, Chicago, Berlin, Dubai, and other cities.
                                 </b>
+                                <div
+                                    className="absolute -top-6 -left-6 w-24 h-24 pointer-events-none">
+                                    <img
+                                        src="/corner-tl.png"
+                                        alt="Corner decoration"
+                                        className="w-full h-full object-cover"
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>

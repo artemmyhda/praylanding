@@ -25,9 +25,9 @@ export default function HomePage() {
                     />
                 </div>
                 <div
-                    className="w-full md:w-1/2 mx-auto text-center rounded-lg overflow-visible relative border-0 border-stone-300 shadow-lg">
+                    className="w-full md:w-1/2 mx-auto text-center rounded-lg overflow-visible relative border border-stone-900 shadow-lg">
                     <div
-                        className="absolute inset-0 bg-white bg-opacity-0 backdrop-filter backdrop-blur-md rounded-lg"></div>
+                        className="absolute inset-0 bg-white bg-opacity-30 backdrop-filter backdrop-blur-md rounded-lg"></div>
                     <div className="relative text-xl drop-shadow-sm p-4">
                         <b>
                             We, the chosen architects of the $PRAY project, have created a path guided by faith and
@@ -55,9 +55,9 @@ export default function HomePage() {
             </PageHeader>
             <PageSection className="text-center pl-1">
                 <div
-                    className="w-full mx-auto text-center rounded-lg overflow-visible relative border-0 border-stone-300 shadow-lg">
+                    className="w-full mx-auto text-center rounded-lg overflow-visible relative border border-stone-900 shadow-lg">
                     <div
-                        className="absolute inset-0 bg-white bg-opacity-0 backdrop-filter backdrop-blur-md rounded-lg"></div>
+                        className="absolute inset-0 bg-white bg-opacity-30 backdrop-filter backdrop-blur-md rounded-lg"></div>
                     <div className="relative text-xl drop-shadow-sm p-4">
                         <b>
                             Inspired by collective enlightenment, we have birthed a free NFT collection in collaboration
@@ -90,7 +90,7 @@ export default function HomePage() {
                                 height={100}
                                 className="size-36 rounded-2xl hover-image"
                             />
-                            <p className="text-center">Kodak: media</p>
+                            <h1 className="text-center text-xl">Kodak: media</h1>
                         </a>
                     </div>
                     <div className="flex items-center justify-center p-4">
@@ -110,7 +110,7 @@ export default function HomePage() {
                                 height={100}
                                 className="size-36 rounded-2xl hover-image"
                             />
-                            <p className="text-center">Rektures: baker</p>
+                            <h1 className="text-center text-xl">Rektures: baker</h1>
                         </a>
                     </div>
                     <div className="flex items-center justify-center p-4">
@@ -130,7 +130,7 @@ export default function HomePage() {
                                 height={100}
                                 className="size-36 rounded-2xl hover-image"
                             />
-                            <p className="text-center">Rat: coder</p>
+                            <h1 className="text-center text-xl">Rat: coder</h1>
                         </a>
                     </div>
                     <div className="flex items-center justify-center p-4">
@@ -152,7 +152,7 @@ export default function HomePage() {
                                 height={100}
                                 className="size-36 rounded-2xl hover-image"
                             />
-                            <p className="text-center">Olya: content</p>
+                            <h1 className="text-center text-xl">Olya: content</h1>
                         </a>
                     </div>
                 </div>
