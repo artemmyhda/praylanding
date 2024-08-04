@@ -60,8 +60,11 @@ export default function HomePage() {
                         className="absolute inset-0 bg-white bg-opacity-30 backdrop-filter backdrop-blur-md rounded-lg"></div>
                     <div className="relative text-xl drop-shadow-sm p-4">
                         <b>
-                            Inspired by collective enlightenment, we have birthed a free NFT collection in collaboration
-                            with Hannah Polza. $PRAY token is launched through the bonding curve. Our team performs the
+                            Inspired by collective enlightenment, we have created a free NFT collection in collaboration
+                            with Hannah Polza.
+                            <br/>
+                            <br/>
+                            $PRAY token is launched through the bonding curve. Our team performs the
                             holy buyback ritual, rewarding faithful NFT holders. Collective prayers and meditations in
                             our digital temples amplify our intentions, while our developers, as spiritual monks, infuse
                             each line of code with divine guidance creating Telegram bot, a digital oracle to spiritual
@@ -95,7 +98,7 @@ export default function HomePage() {
                     </div>
                     <div className="flex items-center justify-center p-2">
                         <a className="flex flex-col items-center gap-2 hover:text-[#0600ff] hover-container"
-                           href="https://warpcast.com/rektures">
+                           href="https://x.com/td_0101">
                             <Image
                                 src="/memberrectures.png"
                                 alt="Rectures"
