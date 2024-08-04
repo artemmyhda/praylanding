@@ -160,19 +160,19 @@ export default function HomePage() {
                         >
                             <Image
                                 src="/memberolya.png"
-                                alt="Olya"
+                                alt="Olha"
                                 width={100}
                                 height={100}
                                 className="size-36 rounded-2xl"
                             />
                             <Image
                                 src="/glow-memberolya.png"
-                                alt="Olya"
+                                alt="Olha"
                                 width={100}
                                 height={100}
                                 className="size-36 rounded-2xl hover-image"
                             />
-                            <h1 className="text-center text-xl">Mystic Muse <br/> Olya</h1>
+                            <h1 className="text-center text-xl">Mystic Muse <br/> Olha</h1>
                         </a>
                     </div>
                 </div>
