@@ -1,7 +1,7 @@
 import "@/styles/app.css"
 import "@/styles/globals.css"
 
-import { ReactNode } from "react"
+import React, { ReactNode } from "react"
 import { env } from "@/env.mjs"
 
 import { siteConfig } from "@/config/site"
@@ -12,6 +12,8 @@ import RootProvider from "@/components/providers/root-provider"
 import BackgroundMusic from "@/components/BackgroundMusic";
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import {FaPlay, FaVolumeMute, FaVolumeUp} from "react-icons/fa";
+import BuyButton from "@/components/BuyButton"
 
 const url = env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"
 
@@ -41,17 +43,18 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <>
       <html lang="en" suppressHydrationWarning>
-        <body
+      <body
           className={cn(
-            "min-h-screen bg-background antialiased",
+              "min-h-screen bg-background antialiased",
           )}
-        >
-          <RootProvider>{children}</RootProvider>
-          <Toaster />
-          <BackgroundMusic />
-          <Analytics />
-          <SpeedInsights />
-        </body>
+      >
+      <RootProvider>{children}</RootProvider>
+      <Toaster/>
+      <BuyButton/>
+      <BackgroundMusic/>
+      <Analytics/>
+      <SpeedInsights/>
+      </body>
       </html>
     </>
   )

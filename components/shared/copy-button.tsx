@@ -32,24 +32,25 @@ export function CopyButton({
   }, [hasCopied])
 
   return (
-    <Button
-      className={cn(
-        "relative z-10 flex h-14 items-center gap-x-2 bg-muted/50 py-4 font-mono text-lg text-muted-foreground hover:bg-muted/80 hover:text-accent-foreground",
-        className
-      )}
-      onClick={async () => {
-        await copyToClipboard(value)
-        setHasCopied(true)
-      }}
-      {...props}
-    >
-      {children}
-      <span className="sr-only">Copy</span>
-      {hasCopied ? (
-        <LuCheck className="h-4 w-4" />
-      ) : (
-        <LuCopy className="h-4 w-4" />
-      )}
-    </Button>
+      <Button
+          className={cn(
+              "relative border-0 z-10 inline-flex h-8 items-center gap-x-1 px-2 font-mono text-sm text-muted-foreground hover:text-[#0600ff]",
+              className
+          )}
+          style={{ backgroundColor: 'transparent', border: 'none', boxShadow: 'none', outline: 'none' }}
+          onClick={async () => {
+            await copyToClipboard(value);
+            setHasCopied(true);
+          }}
+          {...props}
+      >
+        {children}
+        <span className="sr-only">Copy</span>
+        {hasCopied ? (
+            <LuCheck className="h-3 w-3" />
+        ) : (
+            <LuCopy className="h-3 w-3" />
+        )}
+      </Button>
   )
 }

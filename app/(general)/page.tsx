@@ -10,6 +10,7 @@ import { LinkComponent } from "@/components/shared/link-component";
 import { siteConfig } from "@/config/site";
 import { FaTelegram, FaTwitter } from "react-icons/fa";
 import React from "react";
+import {CopyButton} from "@/components/shared/copy-button";
 
 export default function HomePage() {
     return (
@@ -51,6 +52,26 @@ export default function HomePage() {
                 </div>
                 <div className="h-full flex justify-center">
                     <PageHeaderHeading className="pb-8">pray with us</PageHeaderHeading>
+                </div>
+                <div
+                    className="w-5/6 sm:w-2/3 md:w-3/4 xl:w-2/3 mx-auto text-center rounded-lg overflow-visible relative border border-stone-900 shadow-lg">
+                    <div
+                        className="absolute inset-0 bg-white bg-opacity-30 backdrop-filter backdrop-blur-md rounded-lg"></div>
+                    <div className="relative text-xl drop-shadow-sm">
+                        <div className="flex grow justify-between items-center">
+                            <div className="text-center mx-auto">
+                                <b className="hidden md:block">
+                                    CA: 0xE41DE0C5694FC7d995cac53Ae3f8fb91c7aDe692
+                                </b>
+                                <b className="md:hidden">
+                                    CA: 0xE41DE...De692
+                                </b>
+                            </div>
+                            <div>
+                                <CopyButton value="0xE41DE0C5694FC7d995cac53Ae3f8fb91c7aDe692" children=""/>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </PageHeader>
             <PageSection className="text-center pl-1">
@@ -184,10 +205,10 @@ export default function HomePage() {
                 <b className="mb-4 text-xl text-center">Join us, $PRAY with us, and shape your own destiny.</b>
                 <div className="flex items-center justify-center space-x-2">
                     <LinkComponent href={`${siteConfig.links.twitter}`}>
-                        <FaTwitter size={24} />
+                        <FaTwitter className="hover:text-[#0600ff]" size={24} />
                     </LinkComponent>
                     <LinkComponent href={`${siteConfig.links.telegram}`}>
-                        <FaTelegram size={24} />
+                        <FaTelegram className="hover:text-[#0600ff]" size={24} />
                     </LinkComponent>
                 </div>
             </div>

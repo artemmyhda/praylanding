@@ -46,18 +46,18 @@ export function MobileNav() {
             <NavigationMenuItem>
               <LinkComponent href="/">
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  <h1>PRAY</h1>
+                  <h1 className="hover:text-[#0600ff]">PRAY</h1>
                 </NavigationMenuLink>
               </LinkComponent>
               <LinkComponent href="/nft">
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  <h1>NFT</h1>
+                  <h1 className="hover:text-[#0600ff]">NFT</h1>
                 </NavigationMenuLink>
               </LinkComponent>
             </NavigationMenuItem>
             <LinkComponent href="/claim">
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                <h1>CLAIM</h1>
+                <h1 className="hover:text-[#0600ff]">CLAIM</h1>
               </NavigationMenuLink>
             </LinkComponent>
           </NavigationMenuList>

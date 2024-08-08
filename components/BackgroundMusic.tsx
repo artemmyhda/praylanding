@@ -32,7 +32,7 @@ const BackgroundMusic: React.FC = () => {
             </audio>
             <button
                 onClick={togglePlay}
-                className="bg-gray-800 text-white p-2 rounded-full focus:outline-none flex items-center justify-center"
+                className="bg-gray-800 text-white p-2 rounded-full focus:outline-none flex items-center justify-center hover:bg-[#0600ff]"
             >
                 {!hasInteracted ? <FaPlay size={12} /> : (isMuted ? <FaVolumeMute size={12} /> : <FaVolumeUp size={12} />)}
             </button>
