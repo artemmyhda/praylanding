@@ -61,14 +61,14 @@ export default function HomePage() {
                         <div className="flex grow justify-between items-center">
                             <div className="text-center mx-auto">
                                 <b className="hidden md:block">
-                                    CA: 0xE41DE0C5694FC7d995cac53Ae3f8fb91c7aDe692
+                                    CA: 0x4d5313420470239460a977e4e89c4c27043eaa1e
                                 </b>
                                 <b className="md:hidden">
-                                    CA: 0xE41DE...De692
+                                    CA: 0x4d531...eaa1e
                                 </b>
                             </div>
                             <div>
-                                <CopyButton value="0xE41DE0C5694FC7d995cac53Ae3f8fb91c7aDe692" children=""/>
+                                <CopyButton value="0x4d5313420470239460a977e4e89c4c27043eaa1e" children=""/>
                             </div>
                         </div>
                     </div>
