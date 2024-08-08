@@ -5,15 +5,13 @@ import React, { ReactNode } from "react"
 import { env } from "@/env.mjs"
 
 import { siteConfig } from "@/config/site"
-import { fontSans } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
 import { Toaster } from "@/components/ui/toaster"
 import RootProvider from "@/components/providers/root-provider"
 import BackgroundMusic from "@/components/BackgroundMusic";
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
-import {FaPlay, FaVolumeMute, FaVolumeUp} from "react-icons/fa";
-import BuyButton from "@/components/BuyButton"
+import BuyButton from "@/components/BuyButton";
 
 const url = env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"
 
@@ -50,7 +48,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       >
       <RootProvider>{children}</RootProvider>
       <Toaster/>
-      <BuyButton/>
+      <div className="md:hidden fixed bottom-5 left-5">
+          <BuyButton/>
+      </div>
       <BackgroundMusic/>
       <Analytics/>
       <SpeedInsights/>
